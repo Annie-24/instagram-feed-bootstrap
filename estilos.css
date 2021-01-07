@@ -1,3 +1,6 @@
-html,bpdy {
+html {
     background-color: rgb(230, 230, 230);
+}
+body {
+    background-color: #f8f9fa;
 }
