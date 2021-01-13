@@ -15,84 +15,168 @@
 <body>
    
     <!-- Navbar here -->
-    <div class="container">
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="Bootstrap/img/instagram-icon.png" width="30" height="26" class="d-inline-block align-top" alt="">
-      Instagram
-    </a>
-      <form class="form-inline my-2 my-lg-0 ml-20"></form>
-    <button type="button" class="btn btn-success my-2 my-sm-0 ml-20">Create a new post</button>
-    
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-cog"></i>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand mr-9" href="#">
+          <img src="Bootstrap/img/instagram-icon.png" width="30" height="25" class="d-inline-block align-top" alt="">
+      <img src="Bootstrap/img/instagram-title.png" class="img-fluid" alt="">
+
         </a>
-        
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Login out</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-flex">
+          <div class="flex-grow-1">
+           
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
         </div>
-    
-      </li>
-    </ul>
-      </form>
-     </div>
-  </nav>
+      </div>
+
+       <div class="d-flex">
+         <div class="flex-grow-1">
+          
+         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 1cm;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+             <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-cog"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+          
+        </div>
+      </div>
+      </div>
+    </nav>
 
   <!-- Second part -->
-  <div class="d-flex justify-content-around p-2">
-      <div><i class="fa fa-th" style="cursor: pointer;" aria-hidden="true"></i></div>
+  <div class="d-flex justify-content-around p-2 bg-white">
+      <div><i class="fa fa-th" style="cursor: pointer; margin-left: 15cm;" aria-hidden="true"></i></div>
 
-      <a href="index-dos.html"><div><i class="fas fa-square" style="cursor: pointer;"></i></div></a>
+      <a href="index-dos.html"><div><i class="fas fa-square text-dark" style="cursor: pointer; margin-right: 15cm;"></i></div></a>
       </div>
 
       <!-- photos -->
       <section id="galeria" class="container-fluid">
 
 
-      
+     
       <div class="row p-1">
         <div class=" col-lg-4">
-          <img src="Bootstrap/img/cat-xD.jpg" style="width: 450px; height: 35vh;" alt="cat touching my things">
-        </div>
-        <div class="  col-lg-4">
-          <img src="Bootstrap/img/hendery.png" style="width: 450px; height: 35vh;" alt="my future love :3">
-        </div>
-        <div class=" col-lg-4">
-          <img src="Bootstrap/img/ariana.gif" style="width: 450px; height: 35vh;" alt="ariana singing">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/cat-xD.jpg" style="width: 390px; height: 35vh;" alt="cat touching my things">
         </div>
       </div>
+
+
+        <div class="  col-lg-4">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/hendery.png" style="width: 390px; height: 35vh;" alt="my future love :3">
+        </div>
+      </div>
+
+
+        <div class=" col-lg-4">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/ariana.gif" style="width: 390px; height: 35vh;" alt="ariana singing">
+        </div>
+      </div>
+    </div>
 
      
         
       <div class="row p-1">
         <div class=" col-lg-4">
-          <img src="Bootstrap/img/germany.jpg" style="width: 450px; height: 35vh;" alt="cat touching my things">
-          <div class="capa">
-          
-    </div>
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/germany.jpg" style="width: 390px; height: 35vh;" alt="cat touching my things">
         </div>
-        <div class="  col-lg-4">
-          <img src="Bootstrap/img/hendery-dos.png" style="width: 450px; height: 35vh;" alt="my future love :3">
-        </div>
-        <div class=" col-lg-4">
-          <img src="Bootstrap/img/landscape.png" style="width: 450px; height: 35vh;" alt="ariana singing">
+          </div>
+
+
+        <div class="col-lg-4">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/hendery-dos.png" style="width: 390px; height: 35vh;" alt="my future love :3">
         </div>
       </div>
+
+
+        <div class="col-lg-4">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/landscape.png" style="width: 390px; height: 35vh;" alt="ariana singing">
+        </div>
+      </div>
+    </div>
+
+
+      
       <div class="row p-1">
         <div class=" col-lg-4">
-          <img src="Bootstrap/img/makeup.jpg" style="width: 450px; height: 35vh;" alt="cat touching my things">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/makeup.jpg" style="width: 390px; height: 35vh;" alt="cat touching my things">
         </div>
+      </div>
         <div class="  col-lg-4">
-          <img src="Bootstrap/img/pallette-colors.jpg" style="width: 450px; height: 35vh;" alt="my future love :3">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/pallette-colors.jpg" style="width: 390px; height: 35vh;" alt="my future love :3">
         </div>
+      </div>
         <div class=" col-lg-4">
-          <img src="Bootstrap/img/red-lipstick.png" style="width: 450px; height: 35vh;" alt="ariana singing">
+          <div class="filter-to-hover">
+          <img src="Bootstrap/img/red-lipstick.png" style="width: 390px; height: 35vh;" alt="ariana singing">
+        </div>
         </div>
       </div>
         
