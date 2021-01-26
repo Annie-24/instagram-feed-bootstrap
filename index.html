@@ -6,6 +6,7 @@
     <title>Instagram</title>
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
+    
     <link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -27,52 +28,47 @@
         </button>
 
         <div class="d-flex">
-          <div class="flex-grow-1">
-           
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
+          <div class="d-flex flex-grow-1">
+            <button type="button" class="btn btn-success" style="margin-left: 18cm;" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create a new post</button>
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+               
           </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  </div>
-</div>
-
-
-
-
-
-
         </div>
-      </div>
+
+        
+
+
+        
+
+
 
        <div class="d-flex">
          <div class="flex-grow-1">
@@ -104,16 +100,16 @@
 
   <!-- Second part -->
   <div class="d-flex justify-content-around p-2 bg-white">
-      <div><i class="fa fa-th" style="cursor: pointer; margin-left: 15cm;" aria-hidden="true"></i></div>
+      <button class="btn btn-light" style="margin-left: 15cm;"  ><i class="fa fa-th"  style="cursor: pointer;" aria-hidden="true"></i></button>
 
-      <a href="index-dos.html"><div><i class="fas fa-square text-dark" style="cursor: pointer; margin-right: 15cm;"></i></div></a>
+     <button class="btn btn-light" style="margin-right: 15cm;"><a href="index-dos.html"><i class="fas fa-square text-dark" style="cursor: pointer;"></i></div></a></button>
       </div>
 
       <!-- photos -->
-      <section id="galeria" class="container-fluid">
+      <section id="galeria">
 
 
-     
+     <div class="container-fluid">
       <div class="row p-1">
         <div class=" col-lg-4">
           <div class="filter-to-hover">
@@ -135,9 +131,11 @@
         </div>
       </div>
     </div>
+  </div>
+
 
      
-        
+        <div class="container-fluid">
       <div class="row p-1">
         <div class=" col-lg-4">
           <div class="filter-to-hover">
@@ -159,9 +157,9 @@
         </div>
       </div>
     </div>
+  </div>
 
-
-      
+      <div class="container-fluid">
       <div class="row p-1">
         <div class=" col-lg-4">
           <div class="filter-to-hover">
@@ -179,7 +177,7 @@
         </div>
         </div>
       </div>
-        
+    </div>
 
 
 
